@@ -1,0 +1,90 @@
+body {
+  background-color: #333;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  max-width: 100%;
+  margin: 100px auto;
+  border-radius: 10px;
+  background-color: silver;
+  color: blue;
+}
+
+h2 {
+  text-align: center;
+}
+
+.hr {
+  width: 99.8%; 
+  padding: 1px; 
+  background-color: black;
+  /* or */
+  /* border: 1px solid black; */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+label {
+  font-size: 20px;
+}
+
+input[type="text"], 
+textarea, 
+input[type="submit"], 
+label {
+  margin: 10px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+
+
+input[type="submit"] {
+  border: none;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+
+/* Desktop Media Query */
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 95%;
+    background-color: silver
+  };
+}
+
+/* Tablet Media Query*/
+@media  screen and (max-width: 768px) {
+  .container {
+    max-width: 85%;
+    background-color: silver;
+  }
+}
+
+/* Moible Media Query */
+@media  screen and (max-width: 480px) {
+  .container {
+    max-width: 75%;
+  }
+}
+
+/* Even Smaller; */
+@media  screen and (max-width: 190px) {
+  .container {
+    max-width: 55%;
+  }
+}

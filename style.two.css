@@ -1,0 +1,61 @@
+body {
+  background-color: #333;
+}
+
+.container {
+  background: silver;
+  color: blue;
+  max-width: 100%; 
+  margin: 55px auto;  
+}
+
+form input[type="submit"]{
+  background: black;
+  color: #fff;
+}
+
+form {
+  display: grid; 
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: center;
+  padding: 20px;
+}
+
+
+
+  .hr {
+    width: 99.8%; 
+    padding: 1px; 
+    background-color: black;
+    /* or */
+    /* border: 1px solid black; */
+  }
+
+
+/* Desktop Query*/
+@media screen and (max-width: 1024px ) {
+  .container {
+    max-width: 95%;
+  }
+}
+
+
+/* Tablet Query */
+@media screen and (max-width: 768px ) {
+  .container {
+    max-width: 85%;
+  }
+}
+
+/* Mobile Query */
+@media screen and (max-width: 320px ) {
+  .container {
+    max-width: 75%;
+  }
+}
